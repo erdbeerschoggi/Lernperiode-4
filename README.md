@@ -5,6 +5,7 @@
 ## Grob-Planung
 
 Da mir vorgeschlagen wurde eine Frage aus dem Alltag auszuwählen und etwas zu Programmieren, dachte ich mir ich könnte eine Essensauswahl programmieren. Wenn man z.B. nicht weisst auf was man Lust hat zu essen oder man schon die ganze zeit das gleiche isst dann kann dieses Programm bei der Auswahl helfen. 
+Das Programm soll folgend funktionieren: Man wird mehrere Fragen nacheinander gefragt, z.B. auf was man lust hat, wo man essen will usw. Dann werden Gerichte vorgeschlagen die man Kochen kann.
 
 ## 14.2: Explorativer Wegwerf-Prototyp
 
