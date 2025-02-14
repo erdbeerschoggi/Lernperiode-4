@@ -10,18 +10,17 @@ Das Programm soll folgend funktionieren: Man wird mehrere Fragen nacheinander ge
 ## 14.2: Explorativer Wegwerf-Prototyp
 
 - [ ] Alle funktionen des programms entscheiden (also was genau will ich das das Programm macht)
-- [ ] Anfangen das Programm Grob zu programmieren
+- [x] Anfangen das Programm Grob zu programmieren
 
-✍️ Heute habe ich... (50-100 Wörter)
+Heute habe ich mir überlegt was ich genau machen möchte. Dann dauerte es eine Weile bis ich drauskamm wie ich vorgehen sollte. Nachdem fing ich an auf der Form buttons und Textfelder drauftun um zu testen, ob das was ich mir überlegt habe sinn macht. (Ich bin leider nicht weit gekommen heute)
 
-☝️ Vergessen Sie nicht, bis einen ersten Code auf github hochzuladen
 
 ## 21.2: Explorativer Wegwerf-Prototyp
 
-- [ ] ... (dieses AP sollte offline, also ohne Laptop zu bearbeiten sein)
-- [ ] ...
-- [ ] ...
-- [ ] ...
+- [ ] Ungefähre Form austatten, also mit buttons, textfelder. nachdenken wie ich ungefähr den code möchte (dieses AP sollte offline, also ohne Laptop zu bearbeiten sein)
+- [ ] Forms erstellen
+- [ ] Grob programmieren, also die funktion der Buttons 
+- [ ] Sicherstellen das, dass was ich machen möchte umsetzbar ist
 
 ✍️ Heute habe ich... (50-100 Wörter)
 
