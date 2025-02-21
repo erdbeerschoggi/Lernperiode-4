@@ -17,16 +17,19 @@ Heute habe ich mir überlegt was ich genau machen möchte. Dann dauerte es eine 
 
 ## 21.2: Explorativer Wegwerf-Prototyp
 
-- [ ] Alle nötigen Abfragen finden (offline Paket)
-- [ ] Forms erstellen
+- [x] Alle nötigen Abfragen finden (offline Paket)
+- [x] Forms erstellen
 - [ ] Grob programmieren, also die funktion der Buttons 
-- [ ] M164, SQL
+- [x] M164, SQL
 
-✍️ Heute habe ich... (50-100 Wörter)
+Heute habe ich alle nötogen Fragen die ich den User Abfragen will mir ausgedacht. Dann habe ich angefangen die forms zu erstellen, da ich ohne diese nicht wirklich den code programmieren kann. Dann hatte ich mir noch vorgenommen meinem Fehler in SQL zu finden, da wir eine LB dazu bearbeiten und bei mir die ganze Zeit ein Fehler war beim Daten importieren.
 
-☝️ Vergessen Sie nicht, bis einen ersten Code auf github hochzuladen
 
 ## 28.2: Kern-Funktionalität
+- [ ] Speicherung der Antwort
+- [ ] Code grob programmieren
+- [ ] Ausgabe nach der gewählten Antworten
+- [ ] Alle Forms richtig aufzeigen
 
 ## 7.3: Kern-Funktionalität
 
