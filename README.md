@@ -17,10 +17,10 @@ Heute habe ich mir überlegt was ich genau machen möchte. Dann dauerte es eine 
 
 ## 21.2: Explorativer Wegwerf-Prototyp
 
-- [ ] Ungefähre Form austatten, also mit buttons, textfelder. nachdenken wie ich ungefähr den code möchte (dieses AP sollte offline, also ohne Laptop zu bearbeiten sein)
+- [ ] Alle nötigen Abfragen finden (offline Paket)
 - [ ] Forms erstellen
 - [ ] Grob programmieren, also die funktion der Buttons 
-- [ ] Sicherstellen das, dass was ich machen möchte umsetzbar ist
+- [ ] M164, SQL
 
 ✍️ Heute habe ich... (50-100 Wörter)
 
