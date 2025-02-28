@@ -26,9 +26,9 @@ Heute habe ich alle nötogen Fragen die ich den User Abfragen will mir ausgedach
 
 
 ## 28.2: Kern-Funktionalität
-- [ ] Speicherung der Antwort
+- [ ] Speicherung der Benutzereingabe erstellen
 - [ ] Code grob programmieren
-- [ ] Ausgabe nach der gewählten Antworten
+- [ ] Ausgabe nach der Benutzereingabe erstellen 
 - [ ] Alle Forms richtig aufzeigen
 
 ## 7.3: Kern-Funktionalität
