@@ -34,9 +34,9 @@ Heute habe ich alle nötogen Fragen die ich den User Abfragen will mir ausgedach
 Heute habe ich rechechiert wie genau ich die Abspeicherung von den Eingaben des Benutzer speichern kann. Ich habe mehrere Varianten ausprobiert undhabe jetzt eine Variante behalten die noch nicht komplett richtig ist. Deswegen  muss ich es noch überarbeiten. Ich habe auch noch alle nötige Forms erstellt für die erste Click Variante (Wenn man Zuhause essen klickt).
 
 ## 7.3: Kern-Funktionalität
-- [ ] Kern Funktioninalität -> Speicherung von Benutzer Eingabe und Ausgabe anhand der Eingaben.
+- [ ] Kern Funktioninalität -> Speicherung von Benutzer Eingabe und Ausgabe anhand der Eingaben. (Wie ich die Abspeicherung machen möchte)
 - [ ] Essens Ideen sammeln für die Ausgabe vom Generator
-- [ ] Ausgabe nach der Benutzereingabe erstellen 
+- [ ] Ausgabe nach der Benutzereingabe programmieren
 - [ ] Alle Forms für den Generator erstellen
 
 ## 14.3: Architektur ausbauen
