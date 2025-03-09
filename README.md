@@ -42,12 +42,18 @@ Heute habe ich rechechiert wie genau ich die Abspeicherung von den Eingaben des 
 Heute habe ich die speicherung von der Benutzereingabe grob programmiert. Ich erstellte ein neues projekt um zu programmieren, weil das vorherige hatte viele neue Fehler & ich habe mir einen besseren Aufbau für den Essensgenerator überlegt und zwar anstatt 5+ Forms zu haben einfach alle Fragen auf einer abfragen, da ich so kein durcheinander bekomme. Deswegen habe ich neue Forms erstellt und die Buttons hinzugefügt.
 
 ## 14.3: Architektur ausbauen
-- [ ] Code organisieren, so das er übersichtlicher ist
+- [x] Code organisieren, so das er übersichtlicher ist
 - [ ] Essens Ideen sammeln für die Ausgabe vom Generator
-- [ ] Ausgabe der Gerichte, so dass man eine Ausgabe bekommt. Also das Gerichte ausgegeben werden.
+- [x] Das etwas ausgegeben wird. (Einfach so das man etwas heraus bekommt. Z.B. Kein Gericht vorhanden)
 - [ ] Die Ausgabe der Gerichte programmieren nach Auswahl vom Benutzer.
 
+Heute habe ich die Benutzerausgabe probiert zu programmieren. Ich habe die voraussetzungen dazu programmiert und wann was ausgegeben werden soll. Doch wenn ich etwas eingebe bei dem ich Gerichte habe, kommt heraus das es keine Gerichte vorhanden hat. Das heisst ich muss noch an der Kernfunktionalität arbeiten, da ich noch ¨keine¨ Ausgaben bekomme. Dann habe ich noch den Code einwenig organisiert, so das alles übersichtlicher ist für mich.
+
 ## 21.3: Architektur ausbauen
+- [ ] Essens Ideen sammeln für die Ausgabe vom Generator.
+- [ ] Die Ausgabe der Gerichte programmieren nach Auswahl vom Benutzer.
+- [ ] Das Problem finden bei der Ausgabe.
+- [ ] Für jede mögloche Auswahlmindestens 3 Gerichte haben.
 
 ## 28.3: Auspolieren
 
