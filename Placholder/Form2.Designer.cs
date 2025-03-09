@@ -30,6 +30,7 @@
         {
             label1 = new Label();
             label2 = new Label();
+            txtAusgabe = new TextBox();
             SuspendLayout();
             // 
             // label1
@@ -50,11 +51,22 @@
             label2.TabIndex = 1;
             label2.Text = "Generierte Optionen";
             // 
+            // txtAusgabe
+            // 
+            txtAusgabe.Location = new Point(23, 48);
+            txtAusgabe.Multiline = true;
+            txtAusgabe.Name = "txtAusgabe";
+            txtAusgabe.ReadOnly = true;
+            txtAusgabe.Size = new Size(756, 362);
+            txtAusgabe.TabIndex = 2;
+            txtAusgabe.TextChanged += txtAusgabe_TextChanged;
+            // 
             // Form2
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(txtAusgabe);
             Controls.Add(label2);
             Controls.Add(label1);
             Name = "Form2";
@@ -67,5 +79,6 @@
 
         private Label label1;
         private Label label2;
+        private TextBox txtAusgabe;
     }
 }

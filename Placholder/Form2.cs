@@ -12,9 +12,17 @@ namespace smthNew
 {
     public partial class Form2 : Form
     {
-        public Form2()
+        public Form2(string gerichtVorschlag)
         {
             InitializeComponent();
+            txtAusgabe.Text = gerichtVorschlag; // Gerichtsvorschlag in die TextBox setzen
         }
+
+      
+        private void txtAusgabe_TextChanged(object sender, EventArgs e)
+        {
+            txtAusgabe.ReadOnly = true;
+        }
+
     }
 }

@@ -1,14 +1,29 @@
+using static smthNew.Gericht;
+
 namespace smthNew
 {
-    public partial class Form1 : Form
+    public partial class Gericht : Form
     {
         private List<string> benutzerEingaben = new List<string>();
         private string dateiPfad = "eingaben.txt";
+        private Dictionary<string, List<string>> gerichte = new Dictionary<string, List<string>>();
 
-        public Form1()
+        public Gericht()
         {
             InitializeComponent();
+            InitialisiereGerichte();
         }
+
+        private void InitialisiereGerichte()
+        {
+            gerichte = new Dictionary<string, List<string>>()
+            {
+                { "Asiatisch-Vegan-Scharf", new List<string> { "Veganer Tofu-Curry", "Scharfes Gemüsewok" } },
+                { "Mediterran-Vegetarisch-Herzhaft", new List<string> { "Pasta mit Tomatensauce", "Griechischer Salat" } },
+                { "Amerikanisch-Fleischgericht-Salzig", new List<string> { "Burger mit Pommes", "BBQ-Ribs" } }
+            };
+        }
+
 
         private void button2_Click(object sender, EventArgs e)
         {
@@ -91,7 +106,7 @@ namespace smthNew
             File.WriteAllLines(dateiPfad, benutzerEingaben);
 
 
-            new Form2().Show();
+            
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -143,5 +158,22 @@ namespace smthNew
                 }
             }
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            string key = string.Join("-", benutzerEingaben);
+            string vorschlag = "Kein passendes Gericht gefunden.";
+
+            if (gerichte.ContainsKey(key))
+            {
+                vorschlag = string.Join(", ", gerichte[key]);
+            }
+
+            // Öffne Form2 mit dem Vorschlag
+            Form2 form2 = new Form2(vorschlag);
+            form2.Show();
+        }
+
+        
     }
 }

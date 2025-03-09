@@ -1,6 +1,6 @@
 ﻿namespace smthNew
 {
-    partial class Form1
+    partial class Gericht
     {
         /// <summary>
         ///  Required designer variable.
@@ -68,6 +68,7 @@
             button2 = new Button();
             checkboxGekocht = new CheckBox();
             checkboxKRegal = new CheckBox();
+            button1 = new Button();
             SuspendLayout();
             // 
             // label1
@@ -442,7 +443,7 @@
             // 
             // button2
             // 
-            button2.Location = new Point(598, 440);
+            button2.Location = new Point(587, 412);
             button2.Name = "button2";
             button2.Size = new Size(112, 34);
             button2.TabIndex = 39;
@@ -470,11 +471,22 @@
             checkboxKRegal.Text = "Egal";
             checkboxKRegal.UseVisualStyleBackColor = true;
             // 
-            // Form1
+            // button1
+            // 
+            button1.Location = new Point(540, 475);
+            button1.Name = "button1";
+            button1.Size = new Size(203, 34);
+            button1.TabIndex = 41;
+            button1.Text = "Generiere Gerichte";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
+            // 
+            // Gericht
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(777, 555);
+            ClientSize = new Size(777, 566);
+            Controls.Add(button1);
             Controls.Add(checkboxKRegal);
             Controls.Add(button2);
             Controls.Add(checkboxRaw);
@@ -515,7 +527,7 @@
             Controls.Add(checkboxFrühstück);
             Controls.Add(label2);
             Controls.Add(label1);
-            Name = "Form1";
+            Name = "Gericht";
             Text = "Form1";
             TransparencyKey = Color.FromArgb(224, 224, 224);
             Load += Form1_Load;
@@ -574,5 +586,6 @@
         private CheckBox checkboxSauer;
         private CheckBox checkboxEgal;
         private CheckBox checkboxKRegal;
+        private Button button1;
     }
 }
