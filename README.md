@@ -51,11 +51,17 @@ Heute habe ich die Benutzerausgabe probiert zu programmieren. Ich habe die vorau
 
 ## 21.3: Architektur ausbauen
 - [ ] Essens Ideen sammeln für die Ausgabe vom Generator.
-- [ ] Die Ausgabe der Gerichte programmieren nach Auswahl vom Benutzer.
-- [ ] Das Problem finden bei der Ausgabe.
+- [x] Die Ausgabe der Gerichte programmieren nach Auswahl vom Benutzer.
+- [x] Das Problem finden bei der Ausgabe.
 - [ ] Für jede mögloche Auswahlmindestens 3 Gerichte haben.
 
+Heute habe ich die Ausgabe der gerichte programmiert + mir überlegt wie ich die abspeicherung der Auswahl verbessern könnte. Bei der verbesserung von der Abspeicherung ging jedoch nichts besser als zuvor. Deswegen liess ich es bei der originellen abspeicherung so das ich meinen code nicht noch mehr chaotisch mache. Die Ausgabe der Gerichte habe ich jetzt so gestalltet das sie nicht in der Form2 heruasgegeben werden sondern durch eine Message box.
+
 ## 28.3: Auspolieren
+- [ ] Essens Ideen sammeln für die Ausgabe vom Generator.
+- [ ] Für jede mögliche Auswahl mind. 2 Gerichte ausgeben.
+- [ ] Struktur der Gerichte verbessern
+- [ ] Das Problem bei dem 3ten gericht finden. (Da wenn ich es anklicke kommt ein 2 egal wo nicht angeglickt wurde)
 
 ## 4.4: Auspolieren & Abschluss
 
