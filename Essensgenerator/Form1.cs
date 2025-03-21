@@ -2,6 +2,7 @@ using static smthNew.Gericht;
 
 namespace smthNew
 {
+
     public partial class Gericht : Form
     {
         private List<string> benutzerEingaben = new List<string>();
@@ -14,13 +15,16 @@ namespace smthNew
             InitialisiereGerichte();
         }
 
+
+
         private void InitialisiereGerichte()
         {
             gerichte = new Dictionary<string, List<string>>()
             {
                 { "Asiatisch-Vegan-Scharf", new List<string> { "Veganer Tofu-Curry", "Scharfes Gemüsewok" } },
-                { "Mediterran-Vegetarisch-Herzhaft", new List<string> { "Pasta mit Tomatensauce", "Griechischer Salat" } },
-                { "Amerikanisch-Fleischgericht-Salzig", new List<string> { "Burger mit Pommes", "BBQ-Ribs" } }
+                { "Europäisch-Vegetarisch-30 min", new List<string> { "Pasta mit Tomatensauce", "Griechischer Salat" } },
+                { "Amerikanisch-Egal-Fleisch-Egal", new List<string> { "Burger mit Pommes", "BBQ-Ribs" } }
+                
             };
         }
 
@@ -106,7 +110,7 @@ namespace smthNew
             File.WriteAllLines(dateiPfad, benutzerEingaben);
 
 
-            
+
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -161,19 +165,57 @@ namespace smthNew
 
         private void button1_Click(object sender, EventArgs e)
         {
+            benutzerEingaben.Clear();
+
+            
+            List<string> reihenfolge = new List<string> { "Asiatisch", "Amerikanisch", "Europäisch", "Afrikanisch", "Indisch", "Egal",
+                                                  "Fleisch", "Vegetarisch", "Vegan",
+                                                  "Frühstück", "Mittagessen", "Abendessen",
+                                                  "Reis", "Kartoffeln", "Gemüse", "Pasta", "Anderes",
+                                                  "Gebacken", "Gebraten", "Gekocht", "Raw",
+                                                  "Scharf", "Süss", "Sauer", "Egal",
+                                                  "15 min", "30 min", "45 min", ">1h" };
+
+            
+            foreach (string kategorie in reihenfolge)
+            {
+                foreach (Control ctrl in Controls)
+                {
+                    if (ctrl is CheckBox cb && cb.Checked && cb.Text == kategorie)
+                    {
+                        benutzerEingaben.Add(kategorie);
+                    }
+                }
+            }
+
+            
             string key = string.Join("-", benutzerEingaben);
+
+            
+            MessageBox.Show($"Generierter Schlüssel: {key}", "Debugging", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
             string vorschlag = "Kein passendes Gericht gefunden.";
 
+            
             if (gerichte.ContainsKey(key))
             {
                 vorschlag = string.Join(", ", gerichte[key]);
             }
+            else
+            {
+                
+                foreach (var gerichtKey in gerichte.Keys)
+                {
+                    if (key.Contains(gerichtKey))
+                    {
+                        vorschlag = string.Join(", ", gerichte[gerichtKey]);
+                        break;
+                    }
+                }
+            }
 
-            // Öffne Form2 mit dem Vorschlag
-            Form2 form2 = new Form2(vorschlag);
-            form2.Show();
+            
+            MessageBox.Show($"Vorschlag: {vorschlag}", "Gerichtsvorschlag", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
-
-        
     }
 }
