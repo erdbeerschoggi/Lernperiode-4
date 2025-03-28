@@ -56,50 +56,41 @@
             checkboxPasta = new CheckBox();
             checkboxAnderes = new CheckBox();
             checkboxSnack = new CheckBox();
-            label8 = new Label();
-            checkbox15min = new CheckBox();
-            checkbox30min = new CheckBox();
-            checkbox45min = new CheckBox();
-            checkbox1h = new CheckBox();
-            label9 = new Label();
-            checkboxGebacken = new CheckBox();
-            checkboxGebraten = new CheckBox();
-            checkboxRaw = new CheckBox();
             button2 = new Button();
-            checkboxGekocht = new CheckBox();
-            checkboxKRegal = new CheckBox();
             button1 = new Button();
+            button3 = new Button();
             SuspendLayout();
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Font = new Font("Impact", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label1.Font = new Font("Yu Gothic UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label1.Location = new Point(21, 34);
             label1.Name = "label1";
-            label1.Size = new Size(134, 22);
+            label1.Size = new Size(0, 25);
             label1.TabIndex = 0;
-            label1.Text = "Essens Generator";
             label1.TextAlign = ContentAlignment.TopCenter;
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(15, 80);
+            label2.Font = new Font("Arial Rounded MT Bold", 14F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label2.Location = new Point(12, 59);
             label2.Name = "label2";
-            label2.Size = new Size(340, 25);
+            label2.Size = new Size(559, 32);
             label2.TabIndex = 1;
-            label2.Text = "Wählen sie die Optionen die sie möchten!";
+            label2.Text = "Wählen sie insgesammt 3 Optionen aus!";
             // 
             // checkboxFrühstück
             // 
             checkboxFrühstück.AutoSize = true;
+            checkboxFrühstück.BackColor = Color.Lavender;
             checkboxFrühstück.Location = new Point(12, 159);
             checkboxFrühstück.Name = "checkboxFrühstück";
             checkboxFrühstück.Size = new Size(114, 29);
             checkboxFrühstück.TabIndex = 2;
             checkboxFrühstück.Text = "Frühstück";
-            checkboxFrühstück.UseVisualStyleBackColor = true;
+            checkboxFrühstück.UseVisualStyleBackColor = false;
             // 
             // label3
             // 
@@ -351,154 +342,48 @@
             checkboxSnack.Text = "Snack";
             checkboxSnack.UseVisualStyleBackColor = true;
             // 
-            // label8
-            // 
-            label8.AutoSize = true;
-            label8.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label8.Location = new Point(388, 347);
-            label8.Name = "label8";
-            label8.Size = new Size(156, 25);
-            label8.TabIndex = 28;
-            label8.Text = "Zubereitungszeit";
-            // 
-            // checkbox15min
-            // 
-            checkbox15min.AutoSize = true;
-            checkbox15min.Location = new Point(388, 375);
-            checkbox15min.Name = "checkbox15min";
-            checkbox15min.Size = new Size(93, 29);
-            checkbox15min.TabIndex = 29;
-            checkbox15min.Text = "15 min";
-            checkbox15min.UseVisualStyleBackColor = true;
-            // 
-            // checkbox30min
-            // 
-            checkbox30min.AutoSize = true;
-            checkbox30min.Location = new Point(388, 410);
-            checkbox30min.Name = "checkbox30min";
-            checkbox30min.Size = new Size(93, 29);
-            checkbox30min.TabIndex = 30;
-            checkbox30min.Text = "30 min";
-            checkbox30min.UseVisualStyleBackColor = true;
-            // 
-            // checkbox45min
-            // 
-            checkbox45min.AutoSize = true;
-            checkbox45min.Location = new Point(388, 445);
-            checkbox45min.Name = "checkbox45min";
-            checkbox45min.Size = new Size(93, 29);
-            checkbox45min.TabIndex = 31;
-            checkbox45min.Text = "45 min";
-            checkbox45min.UseVisualStyleBackColor = true;
-            // 
-            // checkbox1h
-            // 
-            checkbox1h.AutoSize = true;
-            checkbox1h.Location = new Point(388, 480);
-            checkbox1h.Name = "checkbox1h";
-            checkbox1h.Size = new Size(75, 29);
-            checkbox1h.TabIndex = 32;
-            checkbox1h.Text = "> 1h";
-            checkbox1h.UseVisualStyleBackColor = true;
-            // 
-            // label9
-            // 
-            label9.AutoSize = true;
-            label9.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label9.Location = new Point(628, 121);
-            label9.Name = "label9";
-            label9.Size = new Size(40, 25);
-            label9.TabIndex = 33;
-            label9.Text = "Art";
-            // 
-            // checkboxGebacken
-            // 
-            checkboxGebacken.AutoSize = true;
-            checkboxGebacken.Location = new Point(628, 149);
-            checkboxGebacken.Name = "checkboxGebacken";
-            checkboxGebacken.Size = new Size(115, 29);
-            checkboxGebacken.TabIndex = 34;
-            checkboxGebacken.Text = "Gebacken";
-            checkboxGebacken.UseVisualStyleBackColor = true;
-            // 
-            // checkboxGebraten
-            // 
-            checkboxGebraten.AutoSize = true;
-            checkboxGebraten.Location = new Point(628, 184);
-            checkboxGebraten.Name = "checkboxGebraten";
-            checkboxGebraten.Size = new Size(110, 29);
-            checkboxGebraten.TabIndex = 35;
-            checkboxGebraten.Text = "Gebraten";
-            checkboxGebraten.UseVisualStyleBackColor = true;
-            // 
-            // checkboxRaw
-            // 
-            checkboxRaw.AutoSize = true;
-            checkboxRaw.Location = new Point(628, 254);
-            checkboxRaw.Name = "checkboxRaw";
-            checkboxRaw.Size = new Size(71, 29);
-            checkboxRaw.TabIndex = 37;
-            checkboxRaw.Text = "Raw";
-            checkboxRaw.UseVisualStyleBackColor = true;
-            // 
             // button2
             // 
-            button2.Location = new Point(587, 412);
+            button2.BackColor = Color.Transparent;
+            button2.Location = new Point(452, 370);
             button2.Name = "button2";
             button2.Size = new Size(112, 34);
             button2.TabIndex = 39;
             button2.Text = "Ok";
-            button2.UseVisualStyleBackColor = true;
+            button2.UseVisualStyleBackColor = false;
             button2.Click += button2_Click;
-            // 
-            // checkboxGekocht
-            // 
-            checkboxGekocht.AutoSize = true;
-            checkboxGekocht.Location = new Point(628, 219);
-            checkboxGekocht.Name = "checkboxGekocht";
-            checkboxGekocht.Size = new Size(103, 29);
-            checkboxGekocht.TabIndex = 36;
-            checkboxGekocht.Text = "Gekocht";
-            checkboxGekocht.UseVisualStyleBackColor = true;
-            // 
-            // checkboxKRegal
-            // 
-            checkboxKRegal.AutoSize = true;
-            checkboxKRegal.Location = new Point(12, 522);
-            checkboxKRegal.Name = "checkboxKRegal";
-            checkboxKRegal.Size = new Size(71, 29);
-            checkboxKRegal.TabIndex = 40;
-            checkboxKRegal.Text = "Egal";
-            checkboxKRegal.UseVisualStyleBackColor = true;
             // 
             // button1
             // 
-            button1.Location = new Point(540, 475);
+            button1.BackColor = Color.Transparent;
+            button1.Location = new Point(411, 417);
             button1.Name = "button1";
             button1.Size = new Size(203, 34);
             button1.TabIndex = 41;
             button1.Text = "Generiere Gerichte";
-            button1.UseVisualStyleBackColor = true;
+            button1.UseVisualStyleBackColor = false;
             button1.Click += button1_Click;
+            // 
+            // button3
+            // 
+            button3.BackColor = Color.Transparent;
+            button3.Location = new Point(452, 475);
+            button3.Name = "button3";
+            button3.Size = new Size(112, 34);
+            button3.TabIndex = 42;
+            button3.Text = "Restart";
+            button3.UseVisualStyleBackColor = false;
+            button3.Click += button3_Click;
             // 
             // Gericht
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(777, 566);
+            BackColor = Color.Lavender;
+            ClientSize = new Size(657, 535);
+            Controls.Add(button3);
             Controls.Add(button1);
-            Controls.Add(checkboxKRegal);
             Controls.Add(button2);
-            Controls.Add(checkboxRaw);
-            Controls.Add(checkboxGekocht);
-            Controls.Add(checkboxGebraten);
-            Controls.Add(checkboxGebacken);
-            Controls.Add(label9);
-            Controls.Add(checkbox1h);
-            Controls.Add(checkbox45min);
-            Controls.Add(checkbox30min);
-            Controls.Add(checkbox15min);
-            Controls.Add(label8);
             Controls.Add(checkboxSnack);
             Controls.Add(checkboxAnderes);
             Controls.Add(checkboxPasta);
@@ -527,9 +412,10 @@
             Controls.Add(checkboxFrühstück);
             Controls.Add(label2);
             Controls.Add(label1);
+            FormBorderStyle = FormBorderStyle.SizableToolWindow;
             Name = "Gericht";
-            Text = "Form1";
-            TransparencyKey = Color.FromArgb(224, 224, 224);
+            Text = "Essens Generator";
+            TransparencyKey = Color.White;
             Load += Form1_Load;
             ResumeLayout(false);
             PerformLayout();
@@ -567,25 +453,15 @@
         private CheckBox checkboxPasta;
         private CheckBox checkboxAnderes;
         private CheckBox checkboxSnack;
-        private Label label8;
-        private CheckBox checkbox15min;
-        private CheckBox checkbox30min;
-        private CheckBox checkbox45min;
         private CheckBox checkBox22;
         private CheckBox checkBox23;
         private CheckBox checkBox24;
         private CheckBox checkBox25;
-        private CheckBox checkbox1h;
-        private Label label9;
-        private CheckBox checkboxGebacken;
-        private CheckBox checkboxGebraten;
         private CheckBox checkBox28;
-        private CheckBox checkboxRaw;
         private Button button2;
-        private CheckBox checkboxGekocht;
         private CheckBox checkboxSauer;
         private CheckBox checkboxEgal;
-        private CheckBox checkboxKRegal;
         private Button button1;
+        private Button button3;
     }
 }

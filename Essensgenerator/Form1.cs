@@ -1,8 +1,11 @@
-using static smthNew.Gericht;
+using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Linq;
+using System.Windows.Forms;
 
 namespace smthNew
 {
-
     public partial class Gericht : Form
     {
         private List<string> benutzerEingaben = new List<string>();
@@ -15,169 +18,84 @@ namespace smthNew
             InitialisiereGerichte();
         }
 
-
-
+        // Initialisiert die Gerichtsdaten
         private void InitialisiereGerichte()
         {
             gerichte = new Dictionary<string, List<string>>()
             {
-                { "Asiatisch-Vegan-Scharf", new List<string> { "Veganer Tofu-Curry", "Scharfes Gemüsewok" } },
-                { "Europäisch-Vegetarisch-30 min", new List<string> { "Pasta mit Tomatensauce", "Griechischer Salat" } },
-                { "Amerikanisch-Egal-Fleisch-Egal", new List<string> { "Burger mit Pommes", "BBQ-Ribs" } }
-                
+                { "Asiatisch-Vegan-Reis", new List<string> { "Veganer Sushi-Roll", "Gebratener Reis mit Gemüse" } },
+                { "Europäisch-Fleisch-Süss", new List<string> { "Schweinebraten mit Äpfeln", "Lammbraten mit Honigglasur" } },
+                { "Amerikanisch-Vegetarisch-Frühstück", new List<string> { "Veganer Pancake-Turm", "Veggie-Bagel mit Avocado" } },
+                { "Indisch-Fleisch-Süss", new List<string> { "Süßes Butter-Hähnchen", "Lamm-Curry mit Pflaumen" } },
+                { "Afrikanisch-Vegan-Reis", new List<string> { "Jollof Rice mit Gemüse", "Afrikanischer Reis-Eintopf" } },
+                { "Frühstück-Indisch-Süss", new List<string> { "Indisches Joghurt-Parfait", "Süße Lassi mit Mangopüree" } },
+                { "Mittagessen-Asiatisch-Fleisch", new List<string> { "Hähnchen Teriyaki mit Reis", "Gebratene Ente mit Reis und Gemüse" } },
+                { "Abendessen-Europäisch-Scharf", new List<string> { "Spaghetti Arrabbiata", "Scharfe Wurst mit Paprika" } },
+                { "Vegetarisch-Indisch-Scharf", new List<string> { "Scharfe Linsen-Dal", "Gewürztes Gemüse-Curry" } },
+                { "Amerikanisch-Fleisch-Egal", new List<string> { "Pulled Pork Sandwich", "Gegrillte Rindersteaks" } },
+                { "Asiatisch-Vegetarisch-Reis", new List<string> { "Veganer Nasi Goreng", "Tofu mit Reis und Gemüse" } },
+                { "Europäisch-Vegan-Süss", new List<string> { "Veganer Apfelstrudel", "Obstsalat mit Vanillesauce" } },
+                { "Afrikanisch-Fleisch-Scharf", new List<string> { "Scharfer Afrikanischer Eintopf mit Fleisch", "Piri-Piri-Hähnchen" } },
+                { "Indisch-Vegan-Scharf", new List<string> { "Tofu-Curry mit Chili", "Scharfes Chana Masala" } },
+                { "Frühstück-Vegan-Herzhaft", new List<string> { "Veganer Avocado-Toast", "Veganer Chia-Pudding mit Tomaten" } },
+                { "Mittagessen-Indisch-Süss", new List<string> { "Mango-Lassi", "Süßes Kichererbsen-Curry" } },
+                { "Abendessen-Amerikanisch-Vegan", new List<string> { "Veganer Mac 'n' Cheese", "Veganer BBQ-Burger" } },
+                { "Europäisch-Vegetarisch-Süss", new List<string> { "Zuckerrüben-Salat mit Ziegenkäse", "Schokoladen-Mousse" } },
+                { "Afrikanisch-Vegan-Süss", new List<string> { "Süße Mango-Desserts", "Gebackene Bananen mit Honig" } },
+                { "Asiatisch-Fleisch-Scharf", new List<string> { "Scharfes Rindfleisch mit Gemüse", "Chili-Hähnchen" } },
+                { "Indisch-Vegetarisch-Reis", new List<string> { "Biryani mit Gemüse", "Reis mit Gewürzen und Linsen" } },
+                { "Frühstück-Europäisch-Egal", new List<string> { "Veggie-Omelette", "Frisches Roggenbrot mit Käse" } },
+                { "Mittagessen-Europäisch-Scharf", new List<string> { "Spaghetti Arrabbiata", "Würzige Kartoffelsuppe" } }
+
             };
         }
 
-
+        // Speichert die Auswahl des Benutzers
         private void button2_Click(object sender, EventArgs e)
         {
             benutzerEingaben.Clear();
-
-            // Abfrage Kulinarische Richtung
-            if (checkboxAsiatisch.Checked)
-                benutzerEingaben.Add("Asiatisch");
-            if (checkboxAmerikanisch.Checked)
-                benutzerEingaben.Add("Amerikanisch");
-            if (checkboxEuropäisch.Checked)
-                benutzerEingaben.Add("Europäisch");
-            if (checkboxAfrikanisch.Checked)
-                benutzerEingaben.Add("Afrikanisch");
-            if (checkboxIndisch.Checked)
-                benutzerEingaben.Add("Indisch");
-            if (checkboxKRegal.Checked)
-                benutzerEingaben.Add("Egal");
-
-            // Abfrage Optionen
-            if (checkboxFleisch.Checked)
-                benutzerEingaben.Add("Fleisch");
-            if (checkboxVegetarisch.Checked)
-                benutzerEingaben.Add("Vegetarisch");
-            if (checkboxVegan.Checked)
-                benutzerEingaben.Add("Vegan");
-
-            // Abfrage Zeit
-            if (checkboxFrühstück.Checked)
-                benutzerEingaben.Add("Frühstück");
-            if (checkboxMittagessen.Checked)
-                benutzerEingaben.Add("Mittagessen");
-            if (checkboxAbendessen.Checked)
-                benutzerEingaben.Add("Abendessen");
-
-            // Abfrage Hauptzutat
-            if (checkboxReis.Checked)
-                benutzerEingaben.Add("Reis");
-            if (checkboxKartoffeln.Checked)
-                benutzerEingaben.Add("Kartoffeln");
-            if (checkboxGemüse.Checked)
-                benutzerEingaben.Add("Gemüse");
-            if (checkboxPasta.Checked)
-                benutzerEingaben.Add("Pasta");
-            if (checkboxAnderes.Checked)
-                benutzerEingaben.Add("Anderes");
-
-            // Abfrage Art
-            if (checkboxGebacken.Checked)
-                benutzerEingaben.Add("Gebacken");
-            if (checkboxGebraten.Checked)
-                benutzerEingaben.Add("Gebraten");
-            if (checkboxGekocht.Checked)
-                benutzerEingaben.Add("Gekocht");
-            if (checkboxRaw.Checked)
-                benutzerEingaben.Add("Raw");
-
-            //Abfrage Geschmack
-            if (checkboxScharf.Checked)
-                benutzerEingaben.Add("Scharf");
-            if (checkboxSüss.Checked)
-                benutzerEingaben.Add("Süss");
-            if (checkboxSauer.Checked)
-                benutzerEingaben.Add("Sauer");
-            if (checkboxEgal.Checked)
-                benutzerEingaben.Add("Egal");
-
-            // Abfrage Zubereitungszeit
-            if (checkbox15min.Checked)
-                benutzerEingaben.Add("15 min");
-            if (checkbox30min.Checked)
-                benutzerEingaben.Add("30 min");
-            if (checkbox45min.Checked)
-                benutzerEingaben.Add("45 min");
-            if (checkbox1h.Checked)
-                benutzerEingaben.Add(">1h");
-
-
-
+            foreach (Control ctrl in Controls)
+            {
+                if (ctrl is CheckBox cb && cb.Checked)
+                {
+                    benutzerEingaben.Add(cb.Text);
+                }
+            }
             File.WriteAllLines(dateiPfad, benutzerEingaben);
-
-
-
         }
 
+        // Lädt die gespeicherten Eingaben beim Starten der Anwendung
         private void Form1_Load(object sender, EventArgs e)
         {
-            InitializeComponent();
-
             if (File.Exists(dateiPfad))
             {
-
                 var gespeicherteEingaben = File.ReadAllLines(dateiPfad);
-                foreach (var eingabe in gespeicherteEingaben)
+                foreach (Control ctrl in Controls)
                 {
-                    if (eingabe == "Asiatisch") checkboxAsiatisch.Checked = true;
-                    if (eingabe == "Amerikanisch") checkboxAmerikanisch.Checked = true;
-                    if (eingabe == "Europäisch") checkboxEuropäisch.Checked = true;
-                    if (eingabe == "Afrikanisch") checkboxAfrikanisch.Checked = true;
-                    if (eingabe == "Indisch") checkboxIndisch.Checked = true;
-                    if (eingabe == "Egal") checkboxKRegal.Checked = true;
-
-                    if (eingabe == "Fleisch") checkboxFleisch.Checked = true;
-                    if (eingabe == "Vegetarisch") checkboxVegetarisch.Checked = true;
-                    if (eingabe == "Vegan") checkboxVegan.Checked = true;
-
-                    if (eingabe == "Frühstück") checkboxFrühstück.Checked = true;
-                    if (eingabe == "Mittagessen") checkboxMittagessen.Checked = true;
-                    if (eingabe == "Abendessen") checkboxAbendessen.Checked = true;
-
-                    if (eingabe == "Reis") checkboxReis.Checked = true;
-                    if (eingabe == "Kartoffeln") checkboxKartoffeln.Checked = true;
-                    if (eingabe == "Gemüse") checkboxGemüse.Checked = true;
-                    if (eingabe == "Pasta") checkboxPasta.Checked = true;
-                    if (eingabe == "Anderes") checkboxAnderes.Checked = true;
-
-                    if (eingabe == "Gebacken") checkboxGebacken.Checked = true;
-                    if (eingabe == "Gebraten") checkboxGebraten.Checked = true;
-                    if (eingabe == "Gekocht") checkboxGekocht.Checked = true;
-                    if (eingabe == "Raw") checkboxRaw.Checked = true;
-
-                    if (eingabe == "Scharf") checkboxScharf.Checked = true;
-                    if (eingabe == "Süss") checkboxSüss.Checked = true;
-                    if (eingabe == "Sauer") checkboxSauer.Checked = true;
-                    if (eingabe == "Egal") checkboxEgal.Checked = true;
-
-                    if (eingabe == "15 min") checkbox15min.Checked = true;
-                    if (eingabe == "30 min") checkbox30min.Checked = true;
-                    if (eingabe == "45 min") checkbox45min.Checked = true;
-                    if (eingabe == ">1h") checkbox1h.Checked = true;
-
+                    if (ctrl is CheckBox cb && gespeicherteEingaben.Contains(cb.Text))
+                    {
+                        cb.Checked = true;
+                    }
                 }
             }
         }
 
+        // Verarbeitet die Eingaben und schlägt Gerichte vor
         private void button1_Click(object sender, EventArgs e)
         {
             benutzerEingaben.Clear();
 
-            
-            List<string> reihenfolge = new List<string> { "Asiatisch", "Amerikanisch", "Europäisch", "Afrikanisch", "Indisch", "Egal",
-                                                  "Fleisch", "Vegetarisch", "Vegan",
-                                                  "Frühstück", "Mittagessen", "Abendessen",
-                                                  "Reis", "Kartoffeln", "Gemüse", "Pasta", "Anderes",
-                                                  "Gebacken", "Gebraten", "Gekocht", "Raw",
-                                                  "Scharf", "Süss", "Sauer", "Egal",
-                                                  "15 min", "30 min", "45 min", ">1h" };
+            // Kategorienliste in der gewünschten Reihenfolge
+            List<string> kategorieReihenfolge = new List<string> {
+                "Asiatisch", "Amerikanisch", "Europäisch", "Afrikanisch", "Indisch",
+                "Fleisch", "Vegetarisch", "Vegan",
+                "Frühstück", "Mittagessen", "Abendessen",
+                "Reis", "Kartoffeln", "Gemüse", "Pasta", "Anderes",
+                "Scharf", "Süss", "Sauer", "Egal"
+            };
 
-            
-            foreach (string kategorie in reihenfolge)
+            // Eingaben des Benutzers in die benutzerEingaben-Liste übernehmen
+            foreach (string kategorie in kategorieReihenfolge)
             {
                 foreach (Control ctrl in Controls)
                 {
@@ -188,34 +106,44 @@ namespace smthNew
                 }
             }
 
-            
+            // Generieren des Schlüssels und Überprüfung
             string key = string.Join("-", benutzerEingaben);
-
-            
             MessageBox.Show($"Generierter Schlüssel: {key}", "Debugging", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
+            // Wenn ein Gericht gefunden wird
             string vorschlag = "Kein passendes Gericht gefunden.";
 
-            
             if (gerichte.ContainsKey(key))
             {
-                vorschlag = string.Join(", ", gerichte[key]);
+                vorschlag = string.Join(" und ", gerichte[key]);
             }
             else
             {
-                
+                // Wenn kein exakter Treffer vorhanden ist, versuche ähnliche Kategorien zu finden
                 foreach (var gerichtKey in gerichte.Keys)
                 {
                     if (key.Contains(gerichtKey))
                     {
-                        vorschlag = string.Join(", ", gerichte[gerichtKey]);
+                        vorschlag = string.Join(" und ", gerichte[gerichtKey]);
                         break;
                     }
                 }
             }
 
-            
+            // Anzeige des Gerichtvorschlags
             MessageBox.Show($"Vorschlag: {vorschlag}", "Gerichtsvorschlag", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        // Setzt alle CheckBoxen zurück
+        private void button3_Click(object sender, EventArgs e)
+        {
+            foreach (Control ctrl in this.Controls)
+            {
+                if (ctrl is CheckBox cb)
+                {
+                    cb.Checked = false;
+                }
+            }
         }
     }
 }
