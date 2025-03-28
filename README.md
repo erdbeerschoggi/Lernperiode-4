@@ -58,10 +58,14 @@ Heute habe ich die Benutzerausgabe probiert zu programmieren. Ich habe die vorau
 Heute habe ich die Ausgabe der gerichte programmiert + mir überlegt wie ich die abspeicherung der Auswahl verbessern könnte. Bei der verbesserung von der Abspeicherung ging jedoch nichts besser als zuvor. Deswegen liess ich es bei der originellen abspeicherung so das ich meinen code nicht noch mehr chaotisch mache. Die Ausgabe der Gerichte habe ich jetzt so gestalltet das sie nicht in der Form2 heruasgegeben werden sondern durch eine Message box.
 
 ## 28.3: Auspolieren
-- [ ] Essens Ideen sammeln für die Ausgabe vom Generator.
+- [x] Essens Ideen sammeln für die Ausgabe vom Generator.
 - [ ] Für jede mögliche Auswahl mind. 2 Gerichte ausgeben.
-- [ ] Die Form mit schöner gestallten.
-- [ ] Das Problem bei dem 3ten gericht finden. (Da wenn ich es anklicke kommt ein 2 egal wo nicht angeglickt wurde)
+- [x] Die Form mit schöner gestallten.
+- [x] Das Problem bei dem 3ten gericht finden. (Da wenn ich es anklicke kommt ein 2 egal wo nicht angeglickt wurde)
+
+Heute habe ich Essensideen gesammelt.Ich wollte eigentlich für jede  Kombination 2 Gerichte erstellen doch als ich mir ungefähr das ausgerechnette merkte ich das es um die 800 Kombinationen wären. Ich habe jetzt also nur wenige Kombinationen, das heisst man kann nicht für alle möglichkeiten einen vorschlag bekommen kann was etwas schade ist. Ich habe der Form einbisschen Farbe hinugefügt und das Proble gefunden da ich 2 mal Egal gespeichert hatte und da die beiden keinen unterschied hatten wurden beide aufgenommen.
 
 ## 4.4: Auspolieren & Abschluss
+- [ ] Mehr Gerichte Hinzufügen
+- [ ] Code Organisieren (evtl. bessere abkürzungen erstellen, unnötige kommentare entfernen, usw.)
 
