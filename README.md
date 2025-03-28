@@ -60,7 +60,7 @@ Heute habe ich die Ausgabe der gerichte programmiert + mir überlegt wie ich die
 ## 28.3: Auspolieren
 - [ ] Essens Ideen sammeln für die Ausgabe vom Generator.
 - [ ] Für jede mögliche Auswahl mind. 2 Gerichte ausgeben.
-- [ ] Struktur der Gerichte verbessern
+- [ ] Die Form mit schöner gestallten.
 - [ ] Das Problem bei dem 3ten gericht finden. (Da wenn ich es anklicke kommt ein 2 egal wo nicht angeglickt wurde)
 
 ## 4.4: Auspolieren & Abschluss
