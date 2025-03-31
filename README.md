@@ -66,6 +66,7 @@ Heute habe ich die Ausgabe der gerichte programmiert + mir überlegt wie ich die
 Heute habe ich Essensideen gesammelt.Ich wollte eigentlich für jede  Kombination 2 Gerichte erstellen doch als ich mir ungefähr das ausgerechnette merkte ich das es um die 800 Kombinationen wären. Ich habe jetzt also nur wenige Kombinationen, das heisst man kann nicht für alle möglichkeiten einen vorschlag bekommen kann was etwas schade ist. Ich habe der Form einbisschen Farbe hinugefügt und das Proble gefunden da ich 2 mal Egal gespeichert hatte und da die beiden keinen unterschied hatten wurden beide aufgenommen.
 
 ## 4.4: Auspolieren & Abschluss
-- [ ] Mehr Gerichte Hinzufügen
-- [ ] Code Organisieren (evtl. bessere abkürzungen erstellen, unnötige kommentare entfernen, usw.)
+- [x] Mehr Gerichte Hinzufügen
+- [x] Code Organisieren (evtl. bessere abkürzungen erstellen, unnötige kommentare entfernen, usw.)
 
+Heute habe ich noch einwenig mein Projekt poliert und zwar in dem ich folgendes gemacht habe: Zuerst habe ich eine grosse Auswahl gehabt, also was man alles anklicken kann um ein gericht vorzuschlagen bekommen. Das Problem war jedoch das es sonst über 800 optionen gäbe also reduzierte ich die Auswahl auf 3 Kategorien. Weil ich das so gemacht habe, hat es für alles einen vorschlag. Ich bin jedoch im Problem begegnet wo mir die zeit nicht gereicht hat und zwar wenn man Anderes anwählt bei der Hauptzutat bekommt man nicht den richtigen schlüssel raus für das gericht und es wird nichts vorgeschlagen. Dann zum schluss habe ich noch den code einwenig organisiert so das die reihenfolge einwenig mehr sinn macht. 
