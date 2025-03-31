@@ -2,6 +2,9 @@
 
 14.2 bis 4.4
 
+## Beschreibung
+
+
 ## Grob-Planung
 
 Da mir vorgeschlagen wurde eine Frage aus dem Alltag auszuwählen und etwas zu Programmieren, dachte ich mir ich könnte eine Essensauswahl programmieren. Wenn man z.B. nicht weisst auf was man Lust hat zu essen oder man schon die ganze zeit das gleiche isst dann kann dieses Programm bei der Auswahl helfen. 
