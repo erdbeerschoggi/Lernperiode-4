@@ -12,9 +12,14 @@ Da mir vorgeschlagen wurde eine Frage aus dem Alltag auszuwählen und etwas zu P
 Das Programm soll folgend funktionieren: Man wird mehrere Fragen nacheinander gefragt, z.B. auf was man lust hat, wo man essen will usw. Dann werden Gerichte vorgeschlagen die man Kochen kann.
 
 ## Projekt
+In dieser Lernperiode habe ich einen einfachen Essensgenerator erstellt. Der Essensgenerator enthält 3 Kategorien, aus denen man auswählen kann. In jeder Kategorie wählt man eine Option aus. Nachdem man alle 3 Optionen ausgewählt hat, klickt man auf "OK", um die Eingabe zu speichern und die Gerichte zu generieren. Danach erhält man einen Schlüssel für die ausgewählten Optionen und bekommt Gerichtsvorschläge in einer Messagebox angezeigt. Wenn man fertig ist, klickt man auf "OK" in der Messagebox, um zur Form zurückzukehren. Wenn man erneut Gerichte generieren möchte, muss man auf "Restart" klicken, um die Auswahl zurückzusetzen und erneut Optionen auszuwählen.
+
+![Aufzeichnung 2025-04-01 111741](https://github.com/user-attachments/assets/29b7365c-3eea-4f82-bc74-334b57348fa3)
 
 
 ## Reflexion
+
+Ich fand, dass ich in dieser Lernperiode nur mäßig gearbeitet habe. Die Lernpakete waren nicht so gut, und an vielen Stellen wusste ich nicht genau, wie ich vorgehen sollte. Ich hatte auch Probleme bei der Gerichtsausgabe und musste diese auf weniger Gerichtsvorschläge und weniger Auswahl reduzieren, sonst hätte ich viel zu viel schreiben müssen. Ich bin zwar nicht ganz zufrieden mit dem, was ich am Ende gemacht habe, aber ich wollte mehrere Optionen anbieten, damit man etwas Passenderes auswählen kann. In dieser Lernperiode wurde alles auch strukturiert geplant, also zuerst der Prototyp, dann die Kernfunktionalität, usw. Ich habe mich jedoch nicht so gut daran gehalten und habe das Gefühl, dass der Prozess viel besser gewesen wäre, wenn ich mich daran gehalten hätte. Ich hatte auch noch zum schluss ein Problem und zwar bei der Option "Anderes"
 
 ## 14.2: Explorativer Wegwerf-Prototyp
 
